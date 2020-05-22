@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.stcov">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/carton2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/carton2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ManageAdmin"></activity>
+        <activity android:name=".ShowData2" />
+        <activity android:name=".ProfileSupperAdmin" />
+        <activity android:name=".DataOfCountries" />
+        <activity android:name=".AffectedCountries" />
+        <activity android:name=".CovidData" />
+        <activity android:name=".ManageUser" />
+        <activity android:name=".ShowData" />
+        <activity android:name=".Help" />
+        <activity android:name=".Home" />
+        <activity android:name=".ProfileAdmin" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".Profile" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

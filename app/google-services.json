@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "883034307602",
+    "firebase_url": "https://stcov-8c6a7.firebaseio.com",
+    "project_id": "stcov-8c6a7",
+    "storage_bucket": "stcov-8c6a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883034307602:android:67ecd7e1b71f04d2576ccb",
+        "android_client_info": {
+          "package_name": "com.example.stcov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883034307602-l32qn1h717d4plk43uu1dgpm4ia41tf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMKuk1PhAnHIUkepNPbzKOLkvCbBrwpYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883034307602-l32qn1h717d4plk43uu1dgpm4ia41tf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">StCov</string>
+    <string name="stcov">StCov</string>
+    <string name="stay_at_home">#STAY_AT_HOME</string>
+    <string name="sign_in_to_continue">Sign In to continue</string>
+    <string name="password">Password</string>
+    <string name="go">GO</string>
+    <string name="new_user_sign_up">New User? SIGN UP</string>
+    <string name="hello_there_welcome_back">Hello there, Welcome Back</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="i_have_account_sign_in">Already have an account? Login</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="logout">Logout</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="email_not_verfied">Email Not Verfied !</string>
+    <string name="first_name">First Name</string>
+    <string name="change_profile">Change Profile</string>
+    <string name="last_name">Last Name</string>
+    <string name="your_first_name">Your First Name</string>
+    <string name="verify_now">Verify Now</string>
+    <string name="your_last_name">Your Last Name</string>
+    <string name="email">Email</string>
+    <string name="phone_email">Your Email</string>
+    <string name="welcome">Welcome</string>
+    <string name="signup_to_start_with_our_app">SignUp To Start With Our App</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="close">close</string>
+    <string name="open">open</string>
+    <string name="email_not_verified">Email Not Verified !</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="save">Save</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_email">Change Email</string>
+    <string name="todo">TODO</string>
+    <string name="delete">Delete</string>
+
+</resources>
