@@ -41,7 +41,7 @@ import com.google.firebase.storage.StorageReference;
 public class ManageUser extends AppCompatActivity {
 
     TextView email,firstname,lastname;
-    Button delete;
+    Button delete,edit;
 
     Switch aSwitch;
     FirebaseAuth u;
@@ -60,6 +60,7 @@ public class ManageUser extends AppCompatActivity {
         lastname = findViewById(R.id.lastname_user);
         email = findViewById(R.id.email_user);
         delete = findViewById(R.id.delete);
+        edit = findViewById(R.id.mdf);
 
         aSwitch = findViewById(R.id.switch_btn);
 
@@ -93,6 +94,15 @@ public class ManageUser extends AppCompatActivity {
        });
 
 
+       edit.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent i = new Intent(new Intent(getApplicationContext(),editData.class));
+               System.out.println(uid);
+               i.putExtra("uid",uid);
+               startActivity(i);
+           }
+       });
 
         delete.setOnClickListener(new View.OnClickListener() {
             @Override

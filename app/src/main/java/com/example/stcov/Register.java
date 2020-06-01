@@ -53,7 +53,7 @@ public class Register extends AppCompatActivity {
         firstname = findViewById(R.id.Firstname);
         lastname = findViewById(R.id.Lastname);
         pwd = findViewById(R.id.Password);
-        signup_btn = findViewById(R.id.signup);
+        signup_btn = findViewById(R.id.add_user);
         callLogin = findViewById(R.id.signin);
         img = findViewById(R.id.logo_image);
         logo = findViewById(R.id.logo_name);

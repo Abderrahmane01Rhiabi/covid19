@@ -111,7 +111,7 @@ public class ProfileSupperAdmin extends AppCompatActivity {
         Users.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ProfileSupperAdmin.this,ShowData.class);
+                Intent i = new Intent(ProfileSupperAdmin.this,Help2.class);
                 startActivity(i);
                 //  finish();
             }

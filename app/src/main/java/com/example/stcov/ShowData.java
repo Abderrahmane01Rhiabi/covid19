@@ -79,5 +79,4 @@ public class ShowData extends AppCompatActivity implements FirestoreAdapter.OnLi
     }
 
 
-
 }

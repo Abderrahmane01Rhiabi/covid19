@@ -152,8 +152,6 @@ public class Settings extends AppCompatActivity {
                                     }
                                 });
 
-
-
                             }
                         });
                         Toast.makeText(Settings.this,"Email is Changed",Toast.LENGTH_SHORT).show();

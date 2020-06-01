@@ -31,7 +31,7 @@ import com.google.firebase.storage.StorageReference;
 public class ManageAdmin extends AppCompatActivity {
 
     TextView email,firstname,lastname;
-    Button delete;
+    Button delete,edit;
     Switch aSwitch;
 
     FirebaseUser user;
@@ -50,6 +50,7 @@ public class ManageAdmin extends AppCompatActivity {
         email = findViewById(R.id.email_user);
         delete = findViewById(R.id.delete);
         aSwitch = findViewById(R.id.switch_btn);
+        edit = findViewById(R.id.edt);
 
         fAuth = FirebaseAuth.getInstance();
         fStor = FirebaseFirestore.getInstance();
@@ -59,6 +60,7 @@ public class ManageAdmin extends AppCompatActivity {
 
         Intent data = getIntent();
         final String uid = data.getStringExtra("uid");
+
 
         DocumentReference documentReference = fStor.collection("users").document(uid);
         System.out.println("ManageAdmin Class");
@@ -73,6 +75,16 @@ public class ManageAdmin extends AppCompatActivity {
                     firstname.setText(documentSnapshot.getString("firstname"));
                     lastname.setText(documentSnapshot.getString("lastname"));
                 }
+            }
+        });
+
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(new Intent(getApplicationContext(),editData.class));
+                System.out.println(uid);
+                i.putExtra("uid",uid);
+                startActivity(i);
             }
         });
 

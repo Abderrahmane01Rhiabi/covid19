@@ -109,4 +109,8 @@ public class CovidData extends AppCompatActivity {
     public void goTrackCountries(View view) {
         startActivity(new Intent(getApplicationContext(),AffectedCountries.class));
     }
+
+    public void FatalityRateBySex(View view) {
+        startActivity(new Intent(getApplicationContext(),FatalityRateBySex.class));
+    }
 }

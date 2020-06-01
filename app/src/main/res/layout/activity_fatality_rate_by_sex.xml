@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FatalityRateBySex">
+
+    <org.eazegraph.lib.charts.PieChart
+        android:id="@+id/Pchart"
+        android:layout_width="250dp"
+        android:layout_height="242dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:padding="6dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="150dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/active"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#000"
+                android:paddingLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_one"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#000"
+                android:paddingLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

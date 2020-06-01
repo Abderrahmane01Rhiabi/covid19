@@ -131,22 +131,12 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-            <com.leo.simplearcloader.SimpleArcLoader
-                android:visibility="visible"
-                android:id="@+id/loader"
-                android:layout_centerInParent="true"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                app:arc_style="simple_arc"
-                >
-            </com.leo.simplearcloader.SimpleArcLoader>
+            android:layout_height="358dp">
 
             <ScrollView
+                android:id="@+id/scrollStats"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/scrollStats"
                 android:visibility="gone">
 
                 <LinearLayout
@@ -154,31 +144,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="global stats"
-                        android:textColor="#000"
-                        android:textAllCaps="true"
-                        android:textSize="28sp"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginTop="20dp"/>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/color_two"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="5dp"/>
-
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="25dp"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="10dp">
 
                         <TextView
@@ -187,33 +158,28 @@
                             android:fontFamily="sans-serif-light"
                             android:text="Cases"
                             android:textColor="#000"
-                            android:textSize="18sp"/>
+                            android:textSize="18sp" />
+
                         <TextView
+                            android:id="@+id/tvCases"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/tvCases"
-                            android:textAlignment="textEnd"
-                            android:textSize="18sp"
-                            android:textColor="@color/color_one"
-                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"/>
+                            android:text="0"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color_one"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                     </RelativeLayout>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/color_two"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        />
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="25dp"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="10dp">
 
                         <TextView
@@ -222,33 +188,28 @@
                             android:fontFamily="sans-serif-light"
                             android:text="Recovored"
                             android:textColor="#000"
-                            android:textSize="18sp"/>
+                            android:textSize="18sp" />
+
                         <TextView
+                            android:id="@+id/tvRecovered"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/tvRecovered"
-                            android:textAlignment="textEnd"
-                            android:textSize="18sp"
-                            android:textColor="@color/color_one"
-                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"/>
+                            android:text="0"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color_one"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                     </RelativeLayout>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/color_two"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        />
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="25dp"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="10dp">
 
                         <TextView
@@ -257,34 +218,29 @@
                             android:fontFamily="sans-serif-light"
                             android:text="Critical"
                             android:textColor="#000"
-                            android:textSize="18sp"/>
+                            android:textSize="18sp" />
+
                         <TextView
+                            android:id="@+id/tvCritical"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/tvCritical"
-                            android:textAlignment="textEnd"
-                            android:textSize="18sp"
-
-                            android:textColor="@color/color_one"
-                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"/>
+                            android:text="0"
+
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color_one"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                     </RelativeLayout>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/color_two"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        />
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="25dp"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="10dp">
 
                         <TextView
@@ -293,34 +249,29 @@
                             android:fontFamily="sans-serif-light"
                             android:text="Active"
                             android:textColor="#000"
-                            android:textSize="18sp"/>
+                            android:textSize="18sp" />
+
                         <TextView
+                            android:id="@+id/tvActive"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/tvActive"
-                            android:textAlignment="textEnd"
-                            android:textSize="18sp"
-
-                            android:textColor="@color/color_one"
-                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"/>
+                            android:text="0"
+
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color_one"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                     </RelativeLayout>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/color_two"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        />
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="25dp"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="10dp">
 
                         <TextView
@@ -329,34 +280,29 @@
                             android:fontFamily="sans-serif-light"
                             android:text="Today Cases"
                             android:textColor="#000"
-                            android:textSize="18sp"/>
+                            android:textSize="18sp" />
+
                         <TextView
+                            android:id="@+id/tvTodayCases"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/tvTodayCases"
-                            android:textAlignment="textEnd"
-                            android:textSize="18sp"
-
-                            android:textColor="@color/color_one"
-                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"/>
+                            android:text="0"
+
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color_one"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                     </RelativeLayout>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/color_two"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        />
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="25dp"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="10dp">
 
                         <TextView
@@ -365,34 +311,29 @@
                             android:fontFamily="sans-serif-light"
                             android:text="Total Deaths"
                             android:textColor="#000"
-                            android:textSize="18sp"/>
+                            android:textSize="18sp" />
+
                         <TextView
+                            android:id="@+id/tvTotalDeaths"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/tvTotalDeaths"
-                            android:textAlignment="textEnd"
-                            android:textSize="18sp"
-
-                            android:textColor="@color/color_one"
-                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"/>
+                            android:text="0"
+
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color_one"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                     </RelativeLayout>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/color_two"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        />
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="25dp"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="10dp">
 
                         <TextView
@@ -401,34 +342,29 @@
                             android:fontFamily="sans-serif-light"
                             android:text="Today Deaths"
                             android:textColor="#000"
-                            android:textSize="18sp"/>
+                            android:textSize="18sp" />
+
                         <TextView
+                            android:id="@+id/tvTodayDeaths"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/tvTodayDeaths"
-                            android:textAlignment="textEnd"
-                            android:textSize="18sp"
-
-                            android:textColor="@color/color_one"
-                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"/>
+                            android:text="0"
+
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color_one"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                     </RelativeLayout>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/color_two"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        />
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="25dp"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="10dp">
 
                         <TextView
@@ -437,31 +373,108 @@
                             android:fontFamily="sans-serif-light"
                             android:text="Affected Countries"
                             android:textColor="#000"
-                            android:textSize="18sp"/>
+                            android:textSize="18sp" />
+
                         <TextView
+                            android:id="@+id/tvAffectedCountries"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:text="0"
-                            android:id="@+id/tvAffectedCountries"
-                            android:textAlignment="textEnd"
-                            android:textSize="18sp"
-                            android:textColor="@color/color_one"
-                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"/>
+                            android:text="0"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color_one"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
                     </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:text="global stats"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/color_two"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/color_two" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
-                        />
+                        android:background="@color/color_two" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/color_two" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/color_two" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/color_two" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/color_two" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/color_two" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/color_two" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/color_two" />
 
                 </LinearLayout>
 
             </ScrollView>
+
+            <com.leo.simplearcloader.SimpleArcLoader
+                android:id="@+id/loader"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:arc_style="simple_arc"></com.leo.simplearcloader.SimpleArcLoader>
 
         </RelativeLayout>
 
@@ -471,17 +484,38 @@
 
     <Button
         android:id="@+id/btnTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="18dp"
+        android:background="#fff"
+        android:onClick="goTrackCountries"
+        android:padding="5dp"
+        android:text="Track countries"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="18dp"
         android:background="#fff"
-        android:text="Track countries"
         android:textColor="#000"
-        android:textSize="18sp"
-        android:padding="5dp"
-        android:onClick="goTrackCountries"
-        />
+        android:onClick="FatalityRateBySex"
+        android:textSize="16sp"
+        android:text="Fatality Rate By Sex" />
 
 
 </RelativeLayout>

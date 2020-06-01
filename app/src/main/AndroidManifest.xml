@@ -9,7 +9,11 @@
         android:roundIcon="@drawable/carton2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ManageAdmin"></activity>
+        <activity android:name=".FatalityRateBySex"></activity>
+        <activity android:name=".editData" />
+        <activity android:name=".Help2" />
+        <activity android:name=".AddUser" />
+        <activity android:name=".ManageAdmin" />
         <activity android:name=".ShowData2" />
         <activity android:name=".ProfileSupperAdmin" />
         <activity android:name=".DataOfCountries" />
