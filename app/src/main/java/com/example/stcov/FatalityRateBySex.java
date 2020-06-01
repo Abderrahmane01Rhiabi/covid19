@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ScrollView;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,16 +25,21 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.math.BigDecimal;
+import java.text.NumberFormat;
+
 public class FatalityRateBySex extends AppCompatActivity {
 
     PieChart pieChart;
-
+    TextView male,female;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fatality_rate_by_sex);
 
         pieChart = findViewById(R.id.Pchart);
+        male = findViewById(R.id.male);
+        female = findViewById(R.id.female);
 
         fetchData();
 
@@ -46,15 +53,30 @@ public class FatalityRateBySex extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
 
+                        Log.d("TAG", "Login Response: " + response.toString());
                         JSONObject jsonObject = null;
                         try {
                             jsonObject = new JSONObject(response);
 
-                            JSONArray arr = jsonObject.getJSONArray("table");
+                            //JSONArray arr = jsonObject.getJSONArray("table");
 
-                                pieChart.addPieSlice(new PieModel("Male", Integer.parseInt(arr.getJSONObject(0).getString("DeathRateAllCases")), Color.parseColor("#0F96D3")));
-                                pieChart.addPieSlice(new PieModel("Female", Integer.parseInt(arr.getJSONObject(1).getString("DeathRateAllCases")), Color.parseColor("#fb7268")));
-                                pieChart.startAnimation();
+                            male.setText(jsonObject.getJSONArray("table").getJSONObject(0).getString("DeathRateAllCases"));
+                            female.setText(jsonObject.getJSONArray("table").getJSONObject(1).getString("DeathRateAllCases"));
+
+                            String y = female.getText().toString();
+                            y = y.replace("%"," ");
+                            int yy = (int) Double.parseDouble(y);
+                            System.out.println(yy);
+
+                            String x = male.getText().toString();
+                            x = x.replace("%"," ");
+                            int xx = (int) Double.parseDouble(x);
+                            System.out.println(xx);
+
+
+                            pieChart.addPieSlice(new PieModel("Male",xx, Color.parseColor("#0F96D3")));
+                            pieChart.addPieSlice(new PieModel("Female",yy, Color.parseColor("#fb7268")));
+                            pieChart.startAnimation();
 
                         } catch (JSONException e) {
                             e.printStackTrace();
